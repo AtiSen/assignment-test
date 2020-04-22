@@ -1,0 +1,79 @@
+.form-group{
+    margin-bottom:15px;
+}
+
+.form-type{
+    width: 500px;
+}
+
+.form-type .form-group label{
+    font-size:18px;
+    color:#000;
+    font-weight:lighter;
+}
+
+.form-type .form-group input{
+    width:250px;
+    height:30px;
+}
+
+.btn-success{
+    background-color:blue;
+    font-size:12px;
+    color:#fff;
+    border-radius:5px;
+    border:none;
+    width:60px;
+    height:40px;
+    cursor: pointer;
+    margin-top:10px;
+}
+
+div{
+  margin:0 auto;
+}
+.red{
+    color:#ff0000;
+    overflow:hidden;
+    font-size:12px;
+}
+.btn-red{
+    background-color:red;
+    color:#fff;
+    font-size:12px;
+}
+.btn{
+    width:250px;
+    height:30px;
+    border:none;
+    margin:20px 0 0 0;
+    cursor:pointer;
+    font-size: 14px;
+}
+label{
+   color:#000;
+   font-size:12px !important;
+   line-height:14px;
+   display:block; 
+   font-family:Arial;
+   text-align: left;
+   margin-left:120px;
+   margin-bottom:5px;
+}
+
+.ng-list{
+    text-align:left;
+}
+
+.ng-para{
+    text-align:center;
+    color:darkolivegreen;
+    font-size:12px;
+    line-height:15px;
+}
+
+
+
+
+
+

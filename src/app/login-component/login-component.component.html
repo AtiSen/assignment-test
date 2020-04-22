@@ -1,0 +1,35 @@
+<div class="form-type">
+    <form [formGroup]="contactForm" #loginform="ngForm" (ngSubmit)="onSubmit(f)">
+        <h2>Log In</h2>
+        <div class="form-group">
+            <label>Your Email</label>
+            <input type="text" formControlName="username" class="form-control"    [(ngModel)]="username"  [ngClass]="{ 'is-invalid': submitted && f.username.errors }" required />
+            <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                <div class="red" *ngIf="f.username.errors.required">User Name is required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Your Password</label>
+            <input type="password" formControlName="password" class="form-control"  [(ngModel)]="password"  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" required />
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div class="red" *ngIf="f.password.errors.required">Password is required</div>
+                <div class="red" *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+            </div>
+        </div>
+        <div class="ng-para">Forget your password? <a href="#" class="red"> Click Here</a></div>
+        <div class="form-group">
+           <button [disabled]="!loading.form.valid" click=newSubmit() routerLink="/show-feature" class="btn btn-red">Login</button>
+        </div>
+        <div class="ng-para">Don't have an account? <a href="#" class="red"> Sign up for free trial</a></div>
+</form>
+<br />
+<div class="ng-list">
+    <p>Form value: {{username}} </p>
+    <p>Form status: {{password}}</p>
+</div>
+
+</div>
+
+
+
+
